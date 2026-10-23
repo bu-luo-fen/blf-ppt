@@ -1,0 +1,30 @@
+# Credentials and local configuration
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local outputs, archives, and project materials
+work/
+dist/
+outputs/
+*.zip
+*.pptx
+*.ppt
+*.pdf
+*.docx
+*.xlsx
+project_brief.md
