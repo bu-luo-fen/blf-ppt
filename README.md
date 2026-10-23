@@ -4,15 +4,15 @@
 
 ## 安装
 
-把下列命令中的 `OWNER/REPO` 换成这个仓库实际的 GitHub 地址。使用支持 `gh skill` 的新版 GitHub CLI 时，推荐：
+以下命令使用本项目的实际 GitHub 地址。使用支持 `gh skill` 的新版 GitHub CLI 时，推荐：
 
 ```powershell
-gh skill install OWNER/REPO .agents/skills/blf-ppt --agent codex --scope user --allow-hidden-dirs
+gh skill install bu-luo-fen/blf-ppt .agents/skills/blf-ppt --agent codex --scope user --allow-hidden-dirs
 ```
 
 该命令把 Skill 安装到 Codex 用户范围。安装前检查同名 Skill；不要无意覆盖本地修改。`gh skill` 是 GitHub CLI 的预览功能，旧版 CLI 可能没有此命令；先用 `gh skill install --help` 核对。
 
-没有适用的 GitHub CLI 时，可从 GitHub 下载仓库 ZIP 或用 `git clone https://github.com/OWNER/REPO.git` 取得仓库，随后只复制 `.agents/skills/blf-ppt/` 整个目录到目标电脑的 `~/.agents/skills/blf-ppt/`；Windows 常见目标是 `$env:USERPROFILE\.agents\skills\blf-ppt\`。不要把仓库根目录、测试输出或其他材料复制进 Skill 目录。安装前先查看目标是否已存在，保留本地自定义修改。
+没有适用的 GitHub CLI 时，可从 GitHub 下载仓库 ZIP 或用 `git clone https://github.com/bu-luo-fen/blf-ppt.git` 取得仓库，随后只复制 `.agents/skills/blf-ppt/` 整个目录到目标电脑的 `~/.agents/skills/blf-ppt/`；Windows 常见目标是 `$env:USERPROFILE\.agents\skills\blf-ppt\`。不要把仓库根目录、测试输出或其他材料复制进 Skill 目录。安装前先查看目标是否已存在，保留本地自定义修改。
 
 开启新的 Codex 任务后，可以输入 `$blf-ppt 请根据这篇论文制作组会汇报。`，也可以自然语言提出 PPT 制作或检查请求。如果 Skill 没出现，重启 Codex。
 

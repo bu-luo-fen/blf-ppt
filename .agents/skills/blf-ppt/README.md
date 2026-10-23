@@ -4,7 +4,7 @@
 
 ## 安装与迁移
 
-正式维护源是本仓库中的这个目录；仓库根目录的 `README.md` 提供 GitHub CLI 安装和更新命令。本目录单独复制时，确保目标路径形如 `<项目>/.agents/skills/blf-ppt/SKILL.md`；用户级目录通常为 `~/.agents/skills/blf-ppt/`（Windows：`$env:USERPROFILE\.agents\skills\blf-ppt\`）。安装前检查同名目录，不直接覆盖自定义内容。复制后开启新任务；若仍未发现 Skill，重启 Codex。仓库后续发布到 GitHub 时，远端更新不会自动同步已复制到其他电脑的 Skill。
+正式维护源是本仓库中的这个目录；仓库根目录的 `README.md` 提供 GitHub CLI 安装和更新命令。本目录单独复制时，确保目标路径形如 `<项目>/.agents/skills/blf-ppt/SKILL.md`；用户级目录通常为 `~/.agents/skills/blf-ppt/`（Windows：`$env:USERPROFILE\.agents\skills\blf-ppt\`）。安装前检查同名目录，不直接覆盖自定义内容。复制后开启新任务；若仍未发现 Skill，重启 Codex。GitHub 上的更新不会自动同步已复制到其他电脑的 Skill。
 
 显式调用示例：`$blf-ppt 请根据这篇论文规划组会汇报 PPT。` 也可以自然语言提出制作、改版或检查科研 PPT 的任务。更新时替换自己安装的同名目录即可；先比较现有自定义改动。
 
