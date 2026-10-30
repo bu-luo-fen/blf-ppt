@@ -2,6 +2,8 @@
 
 一套用于规划、制作、改版和检查科研、技术及项目汇报 PPT 的中文 Codex Skill。正式 Skill 入口是 [`.agents/skills/blf-ppt/SKILL.md`](.agents/skills/blf-ppt/SKILL.md)；仓库没有第二份入口文件。普通论文问答不属于它的触发范围。
 
+当前正式版本：**BLF_PPT v1.0.0**（Git Tag：`v1.0.0`）。主要流程包括逐轮需求澄清、内容与视觉方案批准、逐页素材选择、生图样张确认、完整草稿审阅和最终质量检查；具体规则以 Skill 文件为准。
+
 ## 安装
 
 以下命令使用本项目的实际 GitHub 地址。使用支持 `gh skill` 的新版 GitHub CLI 时，推荐：
@@ -11,6 +13,8 @@ gh skill install bu-luo-fen/blf-ppt .agents/skills/blf-ppt --agent codex --scope
 ```
 
 该命令把 Skill 安装到 Codex 用户范围。安装前检查同名 Skill；不要无意覆盖本地修改。`gh skill` 是 GitHub CLI 的预览功能，旧版 CLI 可能没有此命令；先用 `gh skill install --help` 核对。
+
+需要固定安装本次发布版本时，在命令末尾加 `--pin v1.0.0`；未指定版本时，当前 CLI 优先解析仓库中的最新标签。
 
 没有适用的 GitHub CLI 时，可从 GitHub 下载仓库 ZIP 或用 `git clone https://github.com/bu-luo-fen/blf-ppt.git` 取得仓库，随后只复制 `.agents/skills/blf-ppt/` 整个目录到目标电脑的 `~/.agents/skills/blf-ppt/`；Windows 常见目标是 `$env:USERPROFILE\.agents\skills\blf-ppt\`。不要把仓库根目录、测试输出或其他材料复制进 Skill 目录。安装前先查看目标是否已存在，保留本地自定义修改。
 
